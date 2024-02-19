@@ -21,6 +21,7 @@ public class C01Variable {
         int _age;
 //        int #name; // #불가
 //        int int; // 키워드
-    }
 
+//        int ape = KingOfFist;
+    }
 }
