@@ -15,14 +15,14 @@ public class C01Variable {
 //        // 자바의 키워드(예약어)는 변수 명으로 사용할 수 없음
 //
 //        int modelName;
-////        int class; // 키워드
-////        int 6hour; // 숫자 불가
+//        int class; // 키워드
+//        int 6hour; // 숫자 불가
 //        int $value;
 //        int _age;
-////        int #name; // #불가
-////        int int; // 키워드
+//        int #name; // #불가
+//        int int; // 키워드
 //
-////        int ape = KingOfFist;
+//        int ape = KingOfFist;
 
     }
 }
