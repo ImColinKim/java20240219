@@ -17,8 +17,6 @@ public class C29FormatString {
 		float floatValue = 2.5F;
 		double doubleValue = 2.5;
 
-		byte result = byteValue + byteValue;
-
 		int v1 = 1;
 		System.out.println("v1: " + v1);
 		if (true) {
@@ -31,9 +29,7 @@ public class C29FormatString {
 			}
 			System.out.println("v1: " + v1);
 			System.out.println("v2: " + v2);
-			System.out.println("v3: " + v3);
 		}
 		System.out.println("v1: " + v1);
-		System.out.println("v2: " + v2);
 	}
 	}
