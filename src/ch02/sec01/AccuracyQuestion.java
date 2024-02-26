@@ -1,4 +1,8 @@
+<<<<<<< HEAD:src/ch02/sec01/AccuracyQuestion.java
 package ch02.sec01;
+=======
+package c02.sec01;
+>>>>>>> origin/master:src/c02/sec01/AccuracyQuestion.java
 
 public class AccuracyQuestion {
 	public static void main(String[] args) {

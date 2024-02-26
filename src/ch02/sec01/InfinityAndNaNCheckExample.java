@@ -1,10 +1,10 @@
-package ch02.sec01;
+package c02.sec01;
 
 public class InfinityAndNaNCheckExample {
 	public static void main(String[] args) {
-		double x = 5.0;
+		int x = 5;
 		double y = 0.0;
-		double z = 5 % y ;
+		double z = x / y ;
 		//double z = x % y;
 
 		//잘못된 코드

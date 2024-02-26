@@ -1,4 +1,8 @@
+<<<<<<< HEAD:src/ch02/sec01/AccuracyExample.java
 package ch02.sec01;
+=======
+package c02.sec01;
+>>>>>>> origin/master:src/c02/sec01/AccuracyExample.java
 
 public class AccuracyExample {
 	public static void main(String[] args) {
