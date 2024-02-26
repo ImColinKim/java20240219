@@ -1,26 +1,24 @@
 package ch04.lecture.p2switch;
 
 public class C02Switch {
-	public static void main(String[] args) {
-		System.out.println("statement 1");
+    public static void main(String[] args) {
+        // break 문 생략시 코드 실행은 계속 진행됨
 
-		String city = "Seoul";
+        System.out.println("statement 1");
 
-		switch (city) {
-			case "Seoul":
-			System.out.println("statement 2");
-			break;
+        String city = "seoul";
 
-			case "Busan":
-			System.out.println("statement 3");
-			break;
-
-			case "Jeju":
-			System.out.println("statement 4");
-			break;
-		}
-
-		System.out.println("statement 5");
-
-	}
+        switch (city) {
+            case "seoul":
+                System.out.println("statement 2");
+//                break;
+            case "busan":
+                System.out.println("statement 3");
+//                break;
+            case "jeju":
+                System.out.println("statement 4");
+                break; // 마지막 break 생략 가능
+        }
+        System.out.println("statement 5");
+    }
 }

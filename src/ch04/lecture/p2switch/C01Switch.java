@@ -1,59 +1,40 @@
 package ch04.lecture.p2switch;
 
-import java.util.Random;
-
 public class C01Switch {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		System.out.println("전국일주 시작");
+        System.out.println("statement 1");
 
-		String[] cities = {"서울", "제주", "부산", "인천", "대구", "대전", "광주", "전주", "경기","집"};
+        String city = "부산";
 
-		Random random = new Random();
+        switch (city) {
+            // 값이 "서울"
+            case "서울":
+                System.out.println("statement 2");
+                break;
 
-		int index = random.nextInt(cities.length);
-		String city = cities [index];
+            // 값이 "제주"
+            case "제주":
+                System.out.println("statement 3");
+                break;
 
-		switch (city){
-			case "서울":
-			System.out.println("여기는 서울입니다.");
-			break;
+            // 값이 "부산"
+            case "부산":
+                System.out.println("statement 4");
+                System.out.println("statement 4 - 1");
+                break;
 
-			case "제주":
-			System.out.println("여기는 제주입니다.");
-			break;
+            // 위의 모든 case에 해당되지 않을 때
+            default:
+                System.out.println("statement 5");
+                break;
 
-			case "부산":
-			System.out.println("여기는 부산입니다.");
-			break;
+        }
 
-			case "인천":
-			System.out.println("여기는 인천입니다.");
-			break;
 
-			case "대구":
-				System.out.println("여기는 대구입니다.");
-			break;
-
-			case "대전":
-				System.out.println("여기는 대전입니다.");
-				break;
-
-			case "광주":
-			System.out.println("여기는 광주입니다.");
-			break;
-
-			case "전주":
-			System.out.println("여기는 전주입니다.");
-			break;
-
-			case "경기":
-			System.out.println("여기는 경기입니다.");
-			break;
-
-			default:
-				System.out.println("저는 지금 집에 있어요");
-			break;
-		}
-	}
+        System.out.println("statement 6");
+        System.out.println("statement 7");
+        System.out.println("statement 8");
+        System.out.println("statement 9");
+    }
 }

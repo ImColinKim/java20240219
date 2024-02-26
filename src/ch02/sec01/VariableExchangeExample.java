@@ -2,7 +2,6 @@ package ch02.sec01;
 
 public class VariableExchangeExample {
     public static void main(String[] args) {
-
         int x = 3;
         int y = 5;
         System.out.println("x:" + x + ", y:" + y);
@@ -12,18 +11,19 @@ public class VariableExchangeExample {
         y = temp;
         System.out.println("x:" + x + ", y:" + y);
 
+
         int a = 100;
         int b = 200;
 
-        System.out.println(a);
-        System.out.println(b);
+        // 적절한 코드 작성
+        // swap a, b
 
-        int c = a;
+        int t = a;
         a = b;
-        b = c;
+        b = t;
 
+        System.out.println(a); // 200
+        System.out.println(b); // 100
 
-        System.out.println(a);
-        System.out.println(b);
     }
 }

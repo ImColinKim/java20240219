@@ -1,35 +1,47 @@
 package ch02.lecture.p02type;
 
 public class C23String {
-	public static void main(String[] args) {
-		// String
-		// 기본타입 <-> 참조타입 간의 Casting 을 통한 형변환은 불가하므로 Method 를 사용
+    public static void main(String[] args) {
+        // 참조타입 String
+        // 기본타입 <->참조타입 간의 형변환 안됨
 
-		String a = "12";
-		int b = Integer.parseInt(a);
-		double c = Double.parseDouble(a);
-//		char d = Character. 불가
+        // 기본타입 <-> String 간의 변환은 메소드로 가능
 
-		int value1 = Integer.parseInt("10");
-		double value2 = Double.parseDouble("3.14");
-		boolean value3 = Boolean.parseBoolean("true");
+        // 1. String -> 기본타입
+        String a = "123";
+        byte b = Byte.parseByte(a);
+        short c = Short.parseShort(a);
+//        char d;
+        int e = Integer.parseInt(a);
+        long f = Long.parseLong(a);
+        float g = Float.parseFloat(a);
+        double h = Double.parseDouble(a);
 
-		System.out.println("value1 = " + value1);
-		System.out.println("value2 = " + value2);
-		System.out.println("value3 = " + value3);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+        System.out.println("e = " + e);
+        System.out.println("f = " + f);
+        System.out.println("g = " + g);
+        System.out.println("h = " + h);
 
-		System.out.println(Boolean.parseBoolean("tRuE"));
-		System.out.println(Boolean.parseBoolean("Yes"));
+        // String -> 기본타입 파싱 실패
+        String i = "가나다";
+//        int j = Integer.parseInt(i); // Exception 발생 (11장에서 설명됨)
 
-		String str1 = String.valueOf(10);
-		String str2 = String.valueOf(3.14);
-		String str4 = Double.toString(3.14);
-		String str3 = String.valueOf(true);
+        // 2. 기본타입 -> String 변환
+        int k = 356;
+        double l = 3.14;
 
-		System.out.println("str1 = " + str1);
-		System.out.println("str2 = " + str2);
-		System.out.println("str3 = " + str3);
-		System.out.println("str3 = " + str4);
-	}
-	}
+        String m = String.valueOf(k);
+        String n = String.valueOf(l);
 
+        System.out.println("m = " + m);
+        System.out.println("n = " + n);
+
+        String o = k + ""; // String과 다른 타입간 더하기(+) 연산의 결과는 String임
+        String p = l + "";
+
+        System.out.println("o = " + o);
+        System.out.println("p = " + p);
+    }
+}
