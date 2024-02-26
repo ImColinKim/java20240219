@@ -1,8 +1,5 @@
-<<<<<<< HEAD:src/ch02/sec01/AndOrQuestion.java
-package ch02.sec01;
-=======
+
 package c02.sec01;
->>>>>>> origin/master:src/c02/sec01/AndOrQuestion.java
 
 public class AndOrQuestion {
 	public static void main(String[] args) {
